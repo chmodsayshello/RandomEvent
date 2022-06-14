@@ -68,7 +68,7 @@ public final class RandomEvent extends JavaPlugin {
                         }
                     }else if(event_type == 4){ // kill race
                         int list_index = random.nextInt((EntityType.values().length-1)-1) + 1;
-                        EntityType entityType= EntityType.values()[list_index];//in the if statement below, afterwards I think an ArrayList would have been better...
+                        EntityType entityType= EntityType.values()[list_index];
                         List invalid_entities = new ArrayList<EntityType>(
                             Arrays.asList(EntityType.AREA_EFFECT_CLOUD,EntityType.ARMOR_STAND,EntityType.ARROW,EntityType.CHEST_BOAT,EntityType.MINECART_CHEST,EntityType.MINECART_COMMAND,EntityType.EGG,EntityType.ENDER_CRYSTAL,EntityType.ENDER_PEARL,EntityType.EVOKER_FANGS,EntityType.THROWN_EXP_BOTTLE,EntityType.EXPERIENCE_ORB,EntityType.ENDER_SIGNAL,EntityType.FALLING_BLOCK,EntityType.FIREBALL,EntityType.FIREWORK,EntityType.MINECART_FURNACE,EntityType.GLOW_ITEM_FRAME,EntityType.MINECART_HOPPER,EntityType.DROPPED_ITEM,EntityType.ITEM_FRAME,EntityType.LEASH_HITCH,EntityType.LIGHTNING,EntityType.MARKER,EntityType.MINECART,EntityType.PAINTING,EntityType.SPLASH_POTION,EntityType.SMALL_FIREBALL,EntityType.SNOWBALL,EntityType.MINECART_MOB_SPAWNER,EntityType.SPECTRAL_ARROW,EntityType.MINECART_TNT,EntityType.PRIMED_TNT,EntityType.TRIDENT,EntityType.WITHER_SKULL));
                         for (int i=0;i<invalid_entities.size();i++){
@@ -95,7 +95,7 @@ public final class RandomEvent extends JavaPlugin {
                 }
             }
 
-        }.runTaskTimer(this, 27600,27600)); //26*60*20=27600
+        }.runTaskTimer(this, 27600,27600)); //23*60*20=27600
         getLogger().info("Random Events started");
         // Plugin startup logic
     }
