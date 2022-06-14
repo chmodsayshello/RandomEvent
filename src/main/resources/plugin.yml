@@ -1,0 +1,7 @@
+name: RandomEvent
+version: '${project.version}'
+main: chmodsayshello.randomevent.RandomEvent
+api-version: 1.19
+authors: [ chmodayshello ]
+description: some funny events for minecraft servers
+website: github.com/chmodsayshello
